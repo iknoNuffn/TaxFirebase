@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+/*Row that contains company name logo and color box*/
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    background: rgba(58, 120, 181, 0.29);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.4px);
+    border: 1px solid rgba(58, 120, 181, 0.44);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 75%;
+    z-index: -1;
+}
+/*column with tex inside row */
+.colTxt{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 40px;
+}
+/*text column Styling H1*/
+.colTxt h1{
+    font-weight: 100;
+    word-spacing: .5em;
+    font-size:  60px;
+}
+/*text column styling p*/
+.colTxt p{
+    word-spacing: .4em;
+    font-size: 20px;
+}
+/*text column h3*/
+.colTxt h3{
+    word-spacing: .55em;
+    font-weight: 200;
+    font-size: 40px;
+}
+/*Btn class styling*/
+button{
+    width: 150px;
+    border-style: none;
+    border: 0;
+    padding: 20px 10px;
+    outline: none;
+    color: #fff;
+    background-color: linear-gradient(to right, #fb5283, #ff3527);
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*button hover*/
+button:hover{
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* text column after*/
+.colTxt::after{
+    content: '';
+    width: 10px;
+    height: 50%;
+    background: linear-gradient(#ff469f, #ff6062);
+}
+/*IMG COLUMN adn Color Box*/
+.colImg{
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+/*Color Box Styling*/
+.impuestos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px 25px;
+    padding: 15px;
+    
+}
+.check{
+    max-width: 10%;
+    height: 40px;
+    justify-content: center;
+}
