@@ -34,6 +34,36 @@
     /*font*/
     font-family: 'Aboreto', cursive;
 }
+.impuestos{
+    display: flex;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    max-width: 80%;
+    max-height: 400px;
+}
+.left{
+    flex-basis: 60%;
+}
+
+.right #title{
+    display: flex;
+    flex-basis: 40%;
+    font-size: 30px;
+    color: var(--darkTwo);
+
+    
+}
+.impuestos ul{
+    margin: 5px 0 10px 0 !important;
+    padding: 0;
+    list-style-type: none;
+    
+}
+.emblem{
+    max-width: 100%;
+    width: 700px;
+    max-height: 100%;
+}
 img{
     /*set img's sizing to be restricted within their containers*/
     width: 100%;
@@ -145,19 +175,19 @@ header .conatiner{
 }
 
 /**/
-.showcase .container{
+.impuestos .container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-.title{
+.title .right{
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--darkOne);
     text-transform: capitalize;
     line-height: 1.2;
 }
-.text{
+.item{
     line-height: 1.25;
     font-weight: lighter;
     font-size: .70m;
@@ -206,18 +236,20 @@ header .conatiner{
 
 /*MOBILE SECTION*/
 @media screen and (max-width: 860px){
-    .showcase .container{
+    .impuestos .container{
         grid-template-columns: 1fr;
     }
     .showcase .left .title{
         margin: 4rem 0 0 0;
     }
-    .emblem{
-        margin: -5rem 0 0 0;
+    .right{
+        width: 70%;
     }
     .emblem{
+        margin: -5rem 0 0 0;
         width: 100%;
         transform: none;
+        height: 200px;
     }
     .ham{
         z-index: 100;
